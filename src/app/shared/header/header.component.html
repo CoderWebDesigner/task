@@ -1,0 +1,30 @@
+<!-- ./Header -->
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- NavBar -->
+                <nav class="navbar navbar-expand-lg navbar-light px-0">
+                    <div class="container-fluid">
+                      <a class="navbar-brand mr-0" href="#"><img src="../../../assets/imgs/footer-logo.png" alt="" class="img-fluid"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleCollapsed()">
+                        <i class="fas fa-bars text-white"></i>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
+                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                          <li class="nav-item" *ngFor="let link of navLinks">
+                            <a class="nav-link active" routerLink="about">{{link}}</a>
+                          </li>
+                        </ul>
+                  
+                      </div>
+                    </div>
+                  </nav>
+                <!-- ./NavBar -->
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ./Header -->

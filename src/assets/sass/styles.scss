@@ -1,0 +1,18 @@
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+
+@import 'helpers/variables';
+@import 'helpers/reset';
+@import 'component/startchat';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'pages/about';
+body{
+    direction: rtl;
+    font-family: $font-family;
+    text-align: right;
+}

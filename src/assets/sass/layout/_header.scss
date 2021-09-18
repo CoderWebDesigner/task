@@ -1,0 +1,49 @@
+header {
+  background: $dark-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .navbar-brand{
+      width: 150px;
+  }
+  .nav-item {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color .4s ease-in-out;
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    &:not(:first-of-type){
+      &::before {
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: 0;
+          right: 0;
+          background: #fff;
+          width: 1.7px;
+          height: 60%;
+        }
+  }
+  }
+    
+    &:hover{
+        .nav-link{
+            color: #911d5a !important;
+        }
+    }
+
+  }
+}
